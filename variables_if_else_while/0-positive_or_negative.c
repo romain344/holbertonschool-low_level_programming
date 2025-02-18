@@ -5,6 +5,8 @@
 /**
  * main - Entry point
  *
+ * Descriptiont: Assingns a random nuber to n and prints whether 
+ * it is positive, negative, or zero
  * Return: Always 0 (Success)
  */
 int main(void)
