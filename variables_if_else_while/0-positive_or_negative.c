@@ -1,35 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Descriptiont: Assingns a random nuber to n and prints whether 
- * it is positive, negative, or zero
- * Return: Always 0 (Success)
+ * Description: This function generates a random number and checks if it is
+ * positive, negative, or zero. It then prints the corresponding result.
+ *
+ * Return: 0 (success)
  */
 int main(void)
 {
-	int n;
-
-	srand(time(0));		/* Initialisation du générateur de nombres aléatoires */
-	n = rand();			/* Générer un nombre aléatoire */
-
-	printf("%d ", n);	/* Afficher le nombre généré */
-
-	if (n > 0)
-	{
-		printf("is positive\n");	/* Si le nombre est positif */
-	}
-	else if (n == 0)
-	{
-		printf("is zero\n");		/* Si le nombre est égal à 0 */
-	}
-	else
-	{
-		printf("is negative\n");	/* Si le nombre est négatif */
-	}
-
-	return (0);		/* Retourner 0 pour indiquer le succès */
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n", n);
+}
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
+else
+{
+printf("%d is negative\n", n);
+}
+return (0);
 }
