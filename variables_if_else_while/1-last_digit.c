@@ -1,24 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 
 /**
  * main - Entry point of the program
  *
- * Description: generate a ramdom nuber
+ * Description: Print if the last digit of the random number
+ * is superior to 5 equal 0 or between 0 and 6.
  *
- * Return 0 (success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	int n;
+	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last_digit = abs(n % 10);
+	last_digit = n % 10;
 
-        printf("last digit of %d is %d ", n, last_digit);
+	printf("Last digit of %d is %d ", n, last_digit);
 
 	if (last_digit > 5)
 		printf("and is greater than 5\n");
@@ -26,5 +29,5 @@ int main(void)
 		printf("and is 0\n");
 	else
 		printf("and is less than 6 and not 0\n");
+
 	return (0);
-}
