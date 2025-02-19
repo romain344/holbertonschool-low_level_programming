@@ -12,9 +12,9 @@ int main(void)
 {
 	int b = 0;
 
-	while (a < 16)
+	while (b < 16)
 	{
-		if (a < 10)
+		if (b < 10)
 		{
 			putchar (b + '0');
 			a++;
@@ -22,7 +22,7 @@ int main(void)
 		else
 		{
 			putchar(b - 10 + 'a');
-			a++
+			a++;
 		}
 	}
 
