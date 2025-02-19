@@ -16,13 +16,13 @@ int main(void)
 	{
 		if (a < 10)
 		{
-			putchar (a + '0');
+			putchar (b + '0');
 			a++;
 		}
 		else
 		{
-			putchar(a - 10 + 'a');
-			a++;
+			putchar(b - 10 + 'a');
+			a++
 		}
 	}
 
