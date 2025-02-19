@@ -3,22 +3,22 @@
 /**
  * main - Entry point fo the program
  *
- * Descrtion: written il lower case
+ * Description: written in lower case
  *
- * Retrun: Always à (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char a;
+	char a = 'a';
 
 	while (a <= 'z')
 	{
 		putchar(a);
+		a++;
 	}
 
-	putchar('n\n');
+	putchar('\n');
 
 	return (0);
 }
-
