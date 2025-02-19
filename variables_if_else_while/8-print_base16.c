@@ -12,16 +12,16 @@ int main(void)
 {
 	int b = 0;
 
-	while (b < 16)
+	while (a < 16)
 	{
-		if (b < 10)
+		if (a < 10)
 		{
-			putchar (b + '0');
+			putchar (a + '0');
 			a++;
 		}
 		else
 		{
-			putchar(b - 10 + 'a');
+			putchar(a - 10 + 'a');
 			a++;
 		}
 	}
