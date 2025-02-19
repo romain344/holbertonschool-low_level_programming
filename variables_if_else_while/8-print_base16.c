@@ -10,18 +10,18 @@
 
 int main(void)
 {
-	int a = 0;
+	int b = 0;
 
 	while (a < 16)
 	{
 		if (a < 10)
 		{
-			putchar (b + '0');
+			putchar (a + '0');
 			a++;
 		}
 		else
 		{
-			putchar(b - 10 + 'a');
+			putchar(a - 10 + 'a');
 			a++;
 		}
 	}
