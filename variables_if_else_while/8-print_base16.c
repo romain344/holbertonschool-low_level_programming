@@ -22,7 +22,7 @@ int main(void)
 		else
 		{
 			putchar(b - 10 + 'a');
-			a++
+			a++;
 		}
 	}
 
