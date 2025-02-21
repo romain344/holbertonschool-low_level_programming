@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	int b = 0;
+	int b = 48
 
-	while (b <= 10)
+	while (b <= 57)
 	{
 		putchar(b);
 		b++;
