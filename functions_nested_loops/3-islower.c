@@ -1,11 +1,14 @@
 #include "main.h"
 #include <ctype.h>
 
+
 /**
- * _islwoer - check for lowercase in the character
+ * _islower - Entry point of the program
  * @c: The character to check
  *
- * Description:
+ * Description: Function than return 1 if the if is true
+ * And 0 if the if is false.
+ * Check than the var c in the function is a lowercase or not.
  *
  * Return: Always 1 if the if is true 0 if the if is false
  */
