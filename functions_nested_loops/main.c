@@ -1,13 +1,12 @@
-#include "main"
+#include "main.h"
 
 /**
+ * main - point of the programe
  *
- * dzcription:main - Enrty of the program 
- *
- * Return 0 (success)
+ * Return: 0 (succes)
  */
-
 int main(void)
 {
-	print_alphabet()
-
+	print_alphabet(void)
+	return
+}
