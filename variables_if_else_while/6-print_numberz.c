@@ -3,9 +3,9 @@
 /**
  * main - Entry point of the program
  *
- * Descriptiont:writtet all number
+ * Description: Print all the single unit from 0 to 10.
  *
- * Retrun: Always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
