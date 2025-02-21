@@ -3,6 +3,7 @@
 
 /**
  * _islwoer - check for lowercase in the character
+ * @c: The character to check
  *
  * Description:
  *
