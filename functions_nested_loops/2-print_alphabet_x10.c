@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet - function that print x10 alphabet in lowercase
+ * print_alphabet_x10 - function that prints the alphabet 10 times
  *
- * description:
+ *Description: This function prints the lowercase alphabet 10 times
  */
 
 void print_alphabet_x10(void)
