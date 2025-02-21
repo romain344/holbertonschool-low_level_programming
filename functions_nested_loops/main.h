@@ -2,5 +2,5 @@
 #define MAIN_H
 
 void _putchar(char c);
-int add(int a, int b)
+
 #endif
