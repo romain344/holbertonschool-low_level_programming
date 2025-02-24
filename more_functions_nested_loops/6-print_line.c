@@ -5,14 +5,15 @@
  */
 void print_line(int a)
 {
-	
+	int i,
+
 	if (a <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (int i = 0; i < a; i++)
+		for (i = 0; i < a; i++)
 		{		
 			_putchar('_');
 		}
