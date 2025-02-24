@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- * print_line - write function ytah 
+ * print_line - draws a straight line in the terminal
+ * @a: the number of times the character '_' should be printe
+ *
+ * Description: If @a is less than or equal to 0, only a newline will be printe
  */
 void print_line(int a)
 {
@@ -14,7 +17,7 @@ void print_line(int a)
 	else
 	{
 		for (i = 0; i < a; i++)
-		{		
+		{
 			_putchar('_');
 		}
 		_putchar('\n');
