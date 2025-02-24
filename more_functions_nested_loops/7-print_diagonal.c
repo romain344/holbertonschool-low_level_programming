@@ -8,7 +8,7 @@
  *              only a newline. Otherwise, it prints a diagonal line
  *              with spaces before '\' to create the diagonal.
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int b, c;
 
@@ -17,15 +17,15 @@ void print_diagonal(int n);
 		_putchar('\n');
 	}
 	else
-	}
-		for (j = 0; j < i; j++)
+	{
+		for (b = 0; b < n; b++)
 		{
-			for (j = 0; j < i; j++)
+			for (c = 0; c < b; c++)
 			{
 				_putchar(' ');
 			}
 			_putchar('\\');
-			_putchar('\'n);
+			_putchar('\n');
 		}
 	}
 }
