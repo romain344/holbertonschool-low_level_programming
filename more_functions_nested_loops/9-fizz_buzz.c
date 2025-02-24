@@ -1,9 +1,15 @@
 #include <stdio.h>
 
 /**
- * main -
+ * main - Entry point of the program
  *
- * Return: 0 (success)
+ * Description: Print all number from 1 to 100
+ * print Fizz for multiple of 3
+ * print Buzz for multiple of 5
+ * print FizzBuzz for both
+ * separate each number by a space
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
