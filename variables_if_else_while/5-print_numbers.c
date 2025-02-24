@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Entry point oh the program
+ * main - Entry point of the program
  *
- * Description:writtet all number
+ * Description: Print all the single unit from 0 to 10.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int b = 0;
+	int b = 10;
 
-	while (b < 10)
+	while (b <= 10)
 	{
-		printf("%d", b);
+		putchar(b);
 		b++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
