@@ -14,9 +14,11 @@ void print_triangle(int size)
 		return;
 	}
 	
-	for (int a = 1; a <= size; a++)
+	int a, b;
+
+	for ( a = 1; a <= size; a++)
 	{
-		for (int b = 1; b <= size; - a; b++)
+		for ( b = 1; b <= size; - a; b++)
 		{
 			printf((" ");
 		}
@@ -26,6 +28,6 @@ void print_triangle(int size)
 			printf("#");
 		}
 
-		printf(("\n");
+		printf("\n");
 	}
 }
