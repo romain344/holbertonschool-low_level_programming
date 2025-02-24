@@ -5,7 +5,9 @@
  */
 void print_numbers(void)
 {
-	for (char panzer = '0'; panzer <= '9'; panzer++)
+	char panzer;
+
+	for (panzer = '0'; panzer <= '9'; panzer++)
 	{
 		-putchar(panzer);
 	}
