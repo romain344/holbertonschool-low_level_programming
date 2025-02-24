@@ -9,7 +9,7 @@ void print_numbers(void)
 
 	for (panzer = '0'; panzer <= '9'; panzer++)
 	{
-		-putchar(panzer);
+		_putchar(panzer);
 	}
 	_putchar('\n');
 }
