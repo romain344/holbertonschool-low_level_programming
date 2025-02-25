@@ -2,11 +2,11 @@
 
 /**
  * reset_to_98 - function pointer
- * @a:
+ * @a: Pointeur vers un entier
  *
  * description:
  */
-void reset_to98(int *a)
+void reset_to_98(int *a)
 {
-	*n = 98;
+	*a = 98;
 }
