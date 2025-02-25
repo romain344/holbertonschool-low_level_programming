@@ -2,7 +2,7 @@
 
 /**
  * _strlen - function that returns the length of a string
- * @a
+ * @a:
  *
  * Return: the length of the chain
  */
@@ -10,7 +10,7 @@ int _strlen(char *a)
 {
 	int length = 0;
 
-	while (*s != '\0')
+	while (*a != '\0')
 	{
 		length++;
 		a++;
