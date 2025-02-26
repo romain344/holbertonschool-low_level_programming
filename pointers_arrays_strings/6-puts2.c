@@ -2,15 +2,15 @@
 
 /**
  * puts2 - function that prints every other character of a string
- * @str:
+ * @str: the string whose characters we want to print
  *
- * Description:
+ * Description: This function prints every other character of a string
  */
 void puts2(char *str)
 {
 	int a = 0;
 
-	while (str[a] != '\');
+	while (str[a] != '\0')
 	{
 
 		if (a % 2 == 0)
