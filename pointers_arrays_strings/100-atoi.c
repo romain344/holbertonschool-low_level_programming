@@ -13,10 +13,10 @@ int _atoi(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == '_')
-			sing *= -1;
+		if (s[i] == '-')
+			sign *= -1;
 		else if (s[i] == '+')
-			sing *= 1;
+			sign *= 1;
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			result = result * 10 + (s[i] - '0');
