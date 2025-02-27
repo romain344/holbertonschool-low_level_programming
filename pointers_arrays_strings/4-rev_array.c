@@ -36,7 +36,7 @@ void print_array (int *a, int e)
 		{
 			printf(",");
 		}
-		printf("%d", a[f];
+		printf("%d", a[f]);
 	}
 	printf("\n");
 }
