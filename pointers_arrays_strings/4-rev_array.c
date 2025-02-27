@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
+ * reverse_array - Inverse le contenu d'un tableau d'entiers
+ * @a: Le tableau à inverser
+ * @b: Le nombre d'éléments dans le tableau
  *
+ * Retour: Rien
  */
 void reverse_array(int *a, int b)
 {
@@ -22,9 +26,9 @@ void reverse_array(int *a, int b)
  *
  * Retour: Rien
  */
-void print_array (int *d int e)
+void print_array (int *a int e)
 {
-	int ;f
+	int f;
 
 	for (f = 0; f < e; f++)
 	{
@@ -32,7 +36,7 @@ void print_array (int *d int e)
 		{
 			printf(",");
 		}
-		printf("%", f[f];
+		printf("%", a[f];
 	}
 	printf("\n");
 }
@@ -48,11 +52,12 @@ int main(void)
 	int e = 5;
 
 	printf("tableau original :\n");
-	print_array(array, c);
+	print_array(array, e);
 
 	reverse_array(array, e);
 
 	printf("reverse_array :\n");
+	print_array(array, e);
 
 	return (0);
 }
