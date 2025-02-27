@@ -26,7 +26,7 @@ void reverse_array(int *a, int b)
  *
  * Retour: Rien
  */
-void print_array (int *a int e)
+void print_array (int *a, int e)
 {
 	int f;
 
@@ -36,7 +36,7 @@ void print_array (int *a int e)
 		{
 			printf(",");
 		}
-		printf("%", a[f];
+		printf("%d", a[f];
 	}
 	printf("\n");
 }
