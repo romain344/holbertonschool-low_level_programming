@@ -8,42 +8,26 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0;
-	int capitalize = 1;
+	int i = 0, j;
+	char separators[] = " \t\n,;.!?\"(){}";
 
-	while (str[i] != '\0')
+	/* Vérifie le premier caractère */
+	if (str[i] >= 'a' && str[i] <= 'z')
+		str[i] -= 32;
+
+	while (str[i])
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		/* Véri:fie si le caractère précédent est un séparateur */
+		for (j = 0; separators[j] != '\0'; j++)
 		{
-			if (capitalize)
+			if (str[i - 1] == separators[j] && str[i] >= 'a' && str[i] <= 'z')
 			{
-				str[i] = str[i] - 'a' + 'a';
-				capitalize = 0;
+				str[i] -= 32; /* Convertit en majuscule */
+				break;
 			}
+
 		}
-		else
-		{
-
-				if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
-				str[i] == ',' || str[i] == ';' || str[i] == '.' ||
-				str[i] == '!' || str[i] == '?' || str[i] == '"' ||
-				str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
-			{
-				capitalize = 1;
-			}
-		}
-
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-
-			if (!capitalize)
-			{
-				str[i] = str[i] + 'a' - 'A';
-			}
-		}
-
 		i++;
 	}
-
 	return (str);
 }
