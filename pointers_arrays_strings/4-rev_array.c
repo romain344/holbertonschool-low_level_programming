@@ -1,64 +1,31 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
- * reverse_array - Inverse le contenu d'un tableau d'entiers
- * @a: Le tableau à inverser
- * @b: Le nombre d'éléments dans le tableau
- *
- * Retour: Rien
- */
-void reverse_array(int *a, int b)
-{
-	int temp, c;
+#include "main.h"
 
-	for (c = 0; c < b / 2; c++)
+/**
+ * leet - Encodes a string into 1337
+ * @str: The string to modify
+ *
+ * Return: The modified string
+ */
+#include "main.h"
+
+/**
+ * reverse_array - Reverses the content of an array of integers.
+ * @a: The array of integers.
+ * @n: The number of elements in the array.
+ *
+ * Return: Nothing.
+ */
+void reverse_array(int *a, int n)
+{
+	int i, temp;
+
+	for (i = 0; i < n / 2; i++)
 	{
-		temp = a[c];
-		a[c] = a[b - c - 1];
-		a[b - c - 1] = temp;
+		temp = a[i];
+		a[i] = a[n - 1 - i];
+		a[n - 1 - i] = temp;
 	}
-}
-
-/**
- * print_array - Affiche un tableau d'entiers
- * @a: Le tableau à afficher
- * @n: Le nombre d'éléments dans le tableau
- *
- * Retour: Rien
- */
-void print_array (int *a, int e)
-{
-	int f;
-
-	for (f = 0; f < e; f++)
-	{
-		if (f != 0)
-		{
-			printf(", ");
-		}
-		printf("%d", a[f]);
-	}
-	printf("\n");
-}
-
-/**
- * main - Fonction principale pour tester reverse_array
- *
- * Retour: Toujours 0
- */
-int main(void)
-{
-	int array[] = {1, 2, 3, 4, 5,};
-	int e = 5;
-
-	printf("tableau original :\n");
-	print_array(array, e);
-
-	reverse_array(array, e);
-
-	printf("reverse_array :\n");
-	print_array(array, e);
-
-	return (0);
 }
