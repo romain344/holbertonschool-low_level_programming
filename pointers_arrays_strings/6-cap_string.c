@@ -13,11 +13,11 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
 			if (capitalize)
 			{
-				str[i] = str[i] - 'a' + 'A';
+				str[i] = str[i] - 'a' + 'a';
 				capitalize = 0;
 			}
 		}
