@@ -1,22 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
-#include "main.h"
-
 /**
- * leet - Encodes a string into 1337
- * @str: The string to modify
+ * reverse_array - Reverses the content of an array of integers
+ * @a: The array to reverse
+ * @n: The number of elements in the array
  *
- * Return: The modified string
- */
-#include "main.h"
-
-/**
- * reverse_array - Reverses the content of an array of integers.
- * @a: The array of integers.
- * @n: The number of elements in the array.
- *
- * Return: Nothing.
+ * Return: nothing
  */
 void reverse_array(int *a, int n)
 {
