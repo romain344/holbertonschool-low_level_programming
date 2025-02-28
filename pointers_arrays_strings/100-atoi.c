@@ -23,7 +23,7 @@ int _atoi(char *s)
 			if (result > (INT_MAX - (s[i] - '0')) / 10)
 			{
 				return (result == 1 ? INT_MAX : INT_MIN);
-			}	
+			}
 			result = result * 10 + (s[i] - '0');
 		}
 		else if (result > 0)
