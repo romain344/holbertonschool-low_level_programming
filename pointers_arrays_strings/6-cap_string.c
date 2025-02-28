@@ -32,6 +32,16 @@ char *cap_string(char *str)
 				capitalize = 1;
 			}
 		}
+
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+
+			if (!capitalize)
+			{
+				str[i] = str[i] + 'a' - 'A';
+			}
+		}
+
 		i++;
 	}
 
