@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 #include <stdio.h>
 
 /**
@@ -19,6 +20,10 @@ int _atoi(char *s)
 			sign *= 1;
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
+			if (i > (INT_MAX - (s[sign] - '0')) / 10)
+			{
+				return (result == 1 ? INT_MAX : INT_MIN);
+			}	
 			result = result * 10 + (s[i] - '0');
 		}
 		else if (result > 0)
