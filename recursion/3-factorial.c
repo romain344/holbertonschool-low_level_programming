@@ -1,21 +1,18 @@
-#include "main.h"
+include "main.h"
 
 /**
- * factorial - Returns the factorial of a given number.
- * @a: The number for which the factorial is to be calculated.
- *
- * Return: The factorial of n, or -1 if n is less than 0.
- */
-int factorial(int a)
+* factorial - Returns the factorial of a number.
+* @n: The number to calculate the factorial of.
+*
+* Return: The factorial of the number, or -1 if n is negative.
+*/
+int factorial(int n)
 {
-	if (a < 0)
-	{
+	if (n < 0)  /* Si n est inférieur à 0, retourner -1*/
 		return (-1);
-	}
-	if (n == 0)
-	{
-		return (1);
-	}
-	return (n * factorial(n - 1));
-}
 
+	if (n == 0)  /* Condition de base : facteur de 0 est 1 */
+		return (1);
+
+	return (n * factorial(n - 1));  /* Appel récursif pour calculer le facteur */
+}
