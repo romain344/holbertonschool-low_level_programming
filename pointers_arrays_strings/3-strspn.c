@@ -8,17 +8,17 @@
  * Return: The number of bytes in the initial segment of `s`
  *         that consist only of bytes from `accept`.
  */
-unsigned int _strspn(char *a, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
 	char *b;
 
-	while (*a)
+	while (*s)
 	{
 		b = accept;
 		while (*b)
 		{
-			if (*a == *b)
+			if (*s == *b)
 			{
 				count++;
 				break;
@@ -29,7 +29,7 @@ unsigned int _strspn(char *a, char *accept)
 		{
 			break;
 		}
-		a++;
+		s++;
 	}
 
 	return (count);
