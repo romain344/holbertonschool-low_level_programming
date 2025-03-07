@@ -12,7 +12,7 @@ int is_number(char *str)
 {
 	int i = 0;
 
-	if (str[i] =='\0')
+	if (str[i] == '\0')
 		return (0);
 
 	while (str[i])
