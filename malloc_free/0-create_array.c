@@ -1,50 +1,25 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * * simple_print_buffer - prints buffer in hexadecimal format
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * create_array - Creates an array of chars and initializes it with a char.
+ * @size: The size of the array.
+ * @c: The character to initialize the array with.
  *
- * Return: Nothing.
+ * Return: Pointer to the array, or NULL if size is 0 or malloc fails.
  */
 char *create_array(unsigned int size, char c)
 {
+	char *array;
 	unsigned int i;
+	if (size == 0)
+		return (NULL);
 
-	i = 0;
-	while (i < size)
-	{
-		if (i % 10)
-		{
-		printf(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", buffer[i]);
-		i++;
-	}
-}
+	array = malloc(size * sizeof(char));
+	if (array == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		array[i] = c;
 
-/**
- * main - checks the code
- *
- * Return: Always 0
- */
-int man(void) 
-{
-	char *buffer;
-
-	buffer = create_array(98, 'H');
-	if (buffer == NULL)
-	{
-		printf("Failed to allocate memory\n");
-		return (1);
-	}
-	simple_print_buffer(buffer, 98);
-	free(buffer);
-	return (0);
+	return (array);
 }
