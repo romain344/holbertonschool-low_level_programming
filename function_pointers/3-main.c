@@ -3,38 +3,40 @@
 #include <stdlib.h>
 
 /**
- * main - performs a simple arithmetic operation
- * @argc: the number of arguments
- * @argv: the arguments passed
+ * main - Programme principal
+ * @argc: Le nombre d'arguments
+ * @argv: Le tableau des arguments
  *
- * Return: 0 on success, 98 on failure
+ * Return: 0 en cas de succès
  */
 int main(int argc, char *argv[])
 {
-	int (*operation)(int, int);
-	int a, b;
-	op_t *op_struct
+	int num1, num2, result;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (1);
+		exit(98);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	op_func = get_op_func(argv[2]);
 
-	
-	p_struct = get_op_func(argv[2]);
-
-	if (op_struct == NULL)
+	if (op_func == NULL)
 	{
 		printf("Error\n");
-		return (1);
+		exit(99);
 	}
 
-	operation = op_struct->f;
+	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
-	printf("%d\n", operation(a, b));
+	result = op_func(num1, num2);
+	printf("%d\n", result);
 	return (0);
 }
