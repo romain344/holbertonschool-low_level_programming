@@ -1,5 +1,5 @@
 #include "lists.h"
-#nclude <stdlib.h>
+#include <stdlib.h>
 /**
  * free_dlistint - Frees a dlistint_t doubly linked list.
  * @head: Pointer to the head of the list.
