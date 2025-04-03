@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /***
  * sum_dlistint - Returns the sum of all data (n) in a dlistint_t list.
