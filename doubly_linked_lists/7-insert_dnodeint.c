@@ -3,9 +3,9 @@
 
 /**
  * insert_dnodeint_at_index - Inserts a new node at a given position.
- * Double pointer to the head of the list.
- * The index where the new node should be inserted.
- * The data to be added to the new node.
+ * @h: Double pointer to the head of the list.
+ * @idx: The index where the new node should be inserted.
+ * @n: The data to be added to the new node.
  *
  * Return: The address of the new node, or NULL if it failed.
  */
@@ -40,5 +40,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	temp->next = new_node;
 
-	return(new_node);
+	return (new_node);
 }
